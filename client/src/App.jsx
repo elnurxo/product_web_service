@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import { deleteProduct, getAll } from '../API/requests'
 
@@ -13,6 +11,7 @@ function App() {
   },[])
   return (
     <>  
+        <h1 style={{textAlign:'center'}}>Hello FullStack Deployment</h1>
         <ul>
           {products && products.map((product)=>{
              return <li key={product._id}>{product.name}, {product.price}
